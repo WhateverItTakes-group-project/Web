@@ -1,0 +1,95 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+
+
+header {
+    background-color: #17ac09;
+    display: flex;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+}
+
+
+header .navigation_bar .buttons {
+    width:100%;
+}
+
+header .navigation_bar .buttons button {
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: #058310;
+    border-color: #333;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 3px 3px 5px rgba(131, 131, 131, 0.5);
+    font-size: 18px;
+}
+
+header .navigation_bar .buttons button:hover {
+    background-color: #034f0a;
+    transform: scale(1.05);
+}
+
+
+main {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.profile {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.profile h2 {
+    margin-bottom: 20px;
+}
+
+.profile p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.disciplines {
+    margin-top: 20px;
+}
+
+.disciplines ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.disciplines li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.logout-btn {
+    background-color: #058310;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center; 
+    display: inline-block;
+}
+
+.logout-btn:hover {
+    background-color: #034f0a;
+}

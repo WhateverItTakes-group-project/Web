@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/personal_cabinet/personal_cabinet.css">
+    <title>Личный кабинет</title>
+</head>
+<body>
+    <header>
+        <nav class="navigation_bar">
+            <div class="buttons">
+                <button class="index_main"><a href="/index/index.html" style="color: white; text-decoration: none;">Главная страница</a></button>
+                <button class="loggout_button"><a href="/login/login.html" style="color: white;text-decoration: none;">Выход</a></button>
+            </div>
+            
+        </nav>
+    </header>
+    <main>
+        <section class="profile">
+            <h2>Личный кабинет</h2>
+            <p><strong>Имя пользователя:</strong> <span id="usernameDisplay"></span></p>
+            <p><strong>Электронная почта:</strong> <span id="emailDisplay"></span></p>
+            <p><strong>Платформа входа:</strong> <span id="platformDisplay"></span></p>
+            <div class="disciplines">
+                <h3>Созданные дисциплины:</h3>
+                <ul id="disciplinesList"></ul>
+            </div>
+            <button class="logout-btn" onclick="redirectToLogin()">Войти в другой аккаунт</button>
+        </section>
+    </main>
+</body>
+<script src="/personal_cabinet/personal_cabinet.js"></script>
+</html>
