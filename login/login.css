@@ -1,0 +1,109 @@
+
+body {
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/images/green_background.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(5px); 
+    z-index: -1;
+}
+
+.main_container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 30px;
+    width: 600px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_container h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(46, 46, 46);
+}
+
+.main_container p {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 22px;
+    color: rgb(50, 150, 50);
+}
+
+.main_container .buttons {
+    margin-left: 0%;
+    width: 100%;
+}
+
+.main_container .buttons button {
+    width: 47%; 
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #058310;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 3px 3px 5px rgba(131, 131, 131, 0.5);
+    font-size: 18px;
+}
+
+.main_container .buttons button:hover {
+    background-color: #034f0a;
+    transform: scale(1.05);
+}
+
+.codeauth {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    border: 1px solid rgb(184, 184, 184);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 18px;
+}
+
+.codeauth:hover {
+    background-color: #e1e1e1;
+    transform: scale(1.05);
+}
+
+.logo_github, .logo_yandex {
+    width: 28px;
+    height: 28px;
+    vertical-align: middle;
+    margin-right: 10px; 
+}
+
+.logo_key {
+    width: 28px;
+    height: 28px;
+    vertical-align: middle;
+    margin-right: 1px; 
+}

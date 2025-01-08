@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/login/login.css">
+    <script src="https://yastatic.net/s3/passport-sdk/autofill/v1/sdk-suggest-with-polyfills-latest.js"></script>
+
+    <title>Авторизация</title>
+</head>
+<body>
+    <div class="main_container">
+        <h1>Авторизация</h1>
+        <p>Для продолжения, авторизуйтесь через:</p>
+        <div class="buttons">
+            <button onclick="authorize('git')">
+                <img class="logo_github" src="/images/github_white.png" alt="GitHub"> 
+                GitHub
+            </button>
+            <button onclick="authorize('yandex')">
+                <img class="logo_yandex" src="/images/Yandex_Browser_icon.png" alt="Yandex"> 
+                Яндекс ID
+            </button>
+        </div>
+        <button onclick="authorize('code')" class="codeauth">
+            <img class="logo_key" src="/images/key_2.png" alt="Код"> 
+            Код
+        </button>
+    </div>
+</body>
+<script src="/login/login.js"></script>
+</html>
