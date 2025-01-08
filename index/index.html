@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/index/index.css">
+    <title>Главная страница</title>
+</head>
+<body>
+    <header>
+        <nav class="navigation_bar">
+            <div class="buttons">
+                <button class="personal_account_button"><a href="/personal_cabinet/personal_cabinet.html" style="color: white; text-decoration: none;">Личный кабинет</a></button>
+                <button class="loggout_button"><a href="/login/login.html" style="color: white; text-decoration: none;">Выход</a></button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="tests-list">
+            <p class="title">Количество тестов: <span class="questsCounter"></span></p>
+            <div class="filter">
+                <label for="disciplineFilter">Выберите дисциплину:</label>
+                <select id="disciplineFilter">
+                    <option value="all">Все</option>
+                    <option value="Математика">Высшая математика</option>
+                    <option value="Дел. Коммуникация">История России</option>
+                    <option value="Физика">Алгоритмизация и программирование</option>
+                    <option value="Химия">Иностранный язык</option>
+                </select>
+            </div>
+            <div class="show-not"></div>
+            <ul class="tests"></ul>
+            <button class="create-new"><a href="/creating/creating.html" style="color: white; text-decoration: none;">Создать новый тест</a></button>
+        </section>
+        <section class="current-test">
+            <h2>Выберите тест для просмотра</h2>
+            <div class="right-panel"></div>
+        </section>
+    </main>
+    <script src="/index/index.js"></script>
+</body>
+</html>
