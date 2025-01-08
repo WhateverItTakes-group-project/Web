@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/creating/creating.css">
+    <title>Создание теста</title>
+</head>
+<body>
+    <div class="container">
+        <h1 contenteditable="true" id="surveyTitle" placeholder="Введите название теста...">Введите название теста...</h1>
+
+        <label for="surveyDescription">Описание теста:</label>
+        <input type="text" id="surveyDescription" required />
+
+        <label for="subject">Дисциплина:</label>
+        <select id="subject" required>
+            <option value="Математика">Математика</option>
+            <option value="Физика">Физика</option>
+            <option value="Химия">Химия</option>
+            <option value="Дел. Коммуникация">Дел. Коммуникация</option>
+        </select>
+
+        <div id="questionsContainer"></div>
+
+        <button id="addQuestionButton">Добавить вопрос</button>
+        <button onclick="writeNewQuestion()">Сохранить тест</button>
+    </div>
+</body>
+<script src="/creating/creating.js"></script>
+</html>
